@@ -1,0 +1,116 @@
+---
+name: Bug report
+about: Create a report to help us improve
+title: '[Bug]: '
+labels: 'bug'
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **NB** TopoStats `< 2.0.0` is no longer actively maintained. If you have encountered an issue using this
+        deprecated  version please try TopoStats `>= 2.0.0`, there are instructions on
+        [installation](https://afm-spm.github.io/TopoStats/installation.html),
+        [usage](https://afm-spm.github.io/TopoStats/usage.html) and
+        [configuration](https://afm-spm.github.io/TopoStats/configuration.html).
+
+        By default TopoStats will process images in parallel to speed up processing. In order to identify the
+        problematic image you should re-run your analyses using the `--cores 1` option so that images are processed
+        sequentially. This makes it possible to identify which image causes the problem.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      description: Please try and tick off each of these items when filing the bug report. There are further instructions on each below.
+      options:
+        - label: Re-run analysis with `run_topostats --core 1`.
+          required: true
+        - label: Describe the bug.
+          required: true
+        - label: Include the configuration file.
+          required: true
+        - label: Copy of the output.
+          required: true
+        - label: The exact command that failed. This is what you typed at the command line, including any options.
+          required: true
+        - label: TopoStats version, this is reported by `run_topostats --version`
+          required: true
+        - label: Operating System and Python Version
+          required: true
+  - type: textarea
+    id: describe-the-bug
+    attributes:
+      label: Describe the bug :lady_beetle:
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: copy-of-output
+    attributes:
+      label: Copy of the output
+      description: Please copy and paste the output that is shown below
+    validations:
+      required: true
+  - type: textarea
+    id: config-file
+    attributes:
+      label: Include the configuration file
+      description: If no configuration file was specified with the `-c`/`--config-file` option the defaults were used, please use the `run_topostats --create-config-file crash.yaml` to save these to the `crash.yaml` file and copy the contents below.
+    validations:
+      required: true
+  - type: textarea
+    id: to-reproduce
+    attributes:
+      label: To Reproduce
+      description: If it is possible to share the file (e.g. via cloud services) that caused the error that would greatly assist in reproducing and investigating the problem. In addition the _exact_ command used that failed should be pasted below.
+    validations:
+      required: false
+  - type: dropdown
+    id: version-topostats
+    attributes:
+      label: TopoStats Version
+      description: What version of our software are you running? You can find this out using `pip show topostats`.
+      options:
+        - 2.0.0
+        - 2.1.0
+        - 2.1.1
+        - 2.1.2
+        - Git main branch
+      default: 3
+    validations:
+      required: true
+  - type: dropdown
+    id: version-python
+    attributes:
+      label: Python Version
+      description: What version of Python our software are you running?
+      options:
+        - 3.8
+        - 3.9
+        - 3.10
+        - 3.11
+        - 3.12
+      default: 3
+    validations:
+      required: true
+  - type: dropdown
+    id: version-os
+    attributes:
+      label: Operating System
+      description: What Operating System are you running?
+      options:
+        - Windows
+        - MacOS Intel (pre-2021)
+        - MacOS M1/M2 (post-2021)
+        - GNU/Linux
+      default: 3
+    validations:
+      required: true
+  - type: textarea
+    id: version-dependencies
+    attributes:
+      label: Python Packages
+      description: If you are able to provide a list of your installed packages that may be useful. The best way to get this is to copy and paste the results of typing `pip freeze`.
+    validations:
+      required: false
+---
