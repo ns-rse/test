@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        We welcome suggestions on features and improvements that can be added to the project.
+        We welcome suggestions on features and improvements that can be added to the project. Please feel free to attach any images that would help clarify or explain your feature request (use the paper clip above any of the text boxes).
   - type: textarea
     id: problem-related
     attributes:

@@ -46,7 +46,8 @@ body:
     id: copy-of-output
     attributes:
       label: Copy of the output
-      description: Please copy and paste the output from your terminal below. At a minimum this should include the bottom section showing where the error arose and the subsequent output. If there is no output and an image shows the problem please paste a URL to that image here.
+      description: |
+        Please copy and paste the output from your terminal below. At a minimum this should include the bottom section showing where the error arose and the subsequent output. If there is no output and an image shows the problem please paste a URL to that image here. If able to include any images which demonstrate the problem please attach them using the paper clip in the menu above.
     validations:
       required: true
   - type: textarea

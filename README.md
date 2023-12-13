@@ -1,6 +1,9 @@
 # Testing, testing, check 1-2
 
-This is a testing ground for things I want to checkout before implementing on other repositories.
+This is a testing ground for things I want to checkout before implementing on other repositories, mostly relating to
+GitHub Actions and templates but may involve other aspects.
+
+Most commits are directly to `main` so I can see the impact immediately but some require branches to trigger actions.
 
 ## Issue Templates
 
