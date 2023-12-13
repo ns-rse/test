@@ -7,8 +7,8 @@ assignees:
 body:
   - type: markdown
     attributes:
-    value: |
-      We welcome suggestions on features and improvements that can be added to the project.
+      value: |
+        We welcome suggestions on features and improvements that can be added to the project.
   - type: textarea
     id: problem-related
     attributes:
