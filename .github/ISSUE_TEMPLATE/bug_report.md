@@ -40,7 +40,7 @@ body:
   - type: textarea
     id: describe-the-bug
     attributes:
-      label: Describe the bug :lady_beetle:
+      label: Describe the bug
       description: A clear and concise description of what the bug is.
     validations:
       required: true
