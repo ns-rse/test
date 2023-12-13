@@ -8,11 +8,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        **NB** TopoStats `< 2.0.0` is no longer actively maintained. If you have encountered an issue using this
-        deprecated  version please try TopoStats `>= 2.0.0`, there are instructions on
-        [installation](https://afm-spm.github.io/TopoStats/installation.html),
-        [usage](https://afm-spm.github.io/TopoStats/usage.html) and
-        [configuration](https://afm-spm.github.io/TopoStats/configuration.html).
+        **NB** TopoStats `< 2.0.0` is no longer actively maintained. If you have encountered an issue using this \
+        deprecated  version please try TopoStats `>= 2.0.0`, there are instructions on...
+
+        + [Installation](https://afm-spm.github.io/TopoStats/installation.html)
+        + [Usage](https://afm-spm.github.io/TopoStats/usage.html)
+        + [Configuration](https://afm-spm.github.io/TopoStats/configuration.html)
 
         By default TopoStats will process images in parallel to speed up processing. In order to identify the
         problematic image you should re-run your analyses using the `--cores 1` option so that images are processed
@@ -55,7 +56,10 @@ body:
     id: config-file
     attributes:
       label: Include the configuration file
-      description: If no configuration file was specified with the `-c`/`--config-file` option the defaults were used, please use the `run_topostats --create-config-file crash.yaml` to save these to the `crash.yaml` file and copy the contents below.
+      description: |
+        If no configuration file was specified with the `-c`/`--config-file` option the defaults were used, please use \
+        the `run_topostats --create-config-file crash.yaml` to save these to the `crash.yaml` file and copy the \
+        contents below.
     validations:
       required: true
   - type: textarea
